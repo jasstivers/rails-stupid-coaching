@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  root to:"questions#ask"
+  get "answer", to:"questions#answer"
+  get 'ask', to: 'questions#ask'
 end
