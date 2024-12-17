@@ -1,11 +1,13 @@
-<div>
+<div class="alert alert-light border-start border-5 m-3" role="alert">
 <%= @your_message %>
 <p>--You</p>
 </div>
 
-<div>
+<div class="alert alert-warning border-start border-5 m-3" role="alert">
 <%= @answer %>
 <p>--Your coach</p>
 </div>
 
-<%= link_to "Ask page", ask_path %>
+<div class="m-3">
+<%= link_to "Ask a new question", ask_path %>
+</div>
